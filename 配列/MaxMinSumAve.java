@@ -22,7 +22,7 @@ public class MaxMinSumAve{
     }
     double ave =(double) sum/nums.length;
     
-    System.out.println("\n最大値=" +max);
+    System.out.println("最大値=" +max);
     System.out.println("最小値=" +min);
     System.out.println("合計値=" +sum);
     System.out.println("平均値=" +ave);
