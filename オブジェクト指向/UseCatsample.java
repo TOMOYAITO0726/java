@@ -3,5 +3,11 @@ public class UseCatsample{
     Cat tama = new Cat();
     tama.eat();
     tama.playToy("ひも");
+    boolean h = tama.isHungry();
+    if(h == true){
+      System.out.println("お腹がすいているにゃー！");
+    } else{
+      System.out.println("お腹はすいていないにゃー！");
+    }
   }
 }
