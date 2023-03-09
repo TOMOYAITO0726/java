@@ -3,9 +3,13 @@ public class Cat{
   int age;      //ageフィールドを追加
   boolean hungry;  //hungryフィールドを追加
   
+  private void printMessage(String message){
+    System.out.println(name + ">" + message);
+  }
+  
   public void eat(){
-    System.out.println(name + ">ごはんを食べるよ！おいしいにゃー");
-    System.out.println(name + ">お腹が一杯になったにゃー");
+    printMessage( "ごはんを食べるよ！おいしいにゃー");
+    printMessage( ">お腹が一杯になったにゃー");
     hungry =false;
   }
   
@@ -14,8 +18,8 @@ public class Cat{
   }
   
   public void playToy(String toy){
-    System.out.println(name+">" + toy + "で遊ぶよ。楽しいにゃー");
-    System.out.println(name+">遊んでお腹が減ったにゃー");
+    printMessage( toy + "で遊ぶよ。楽しいにゃー");
+    printMessage("遊んでお腹が減ったにゃー");
     hungry = true;
   }
   
@@ -34,9 +38,7 @@ public class Cat{
   public int getAge(){ //ageフィールドのゲッターを
     return age;
   }
-  public void introductionMyself(){
-    String n = getName();
-    int a = getAge();
-    System.out.println("名前"+ n +"です"+a+"歳です");
+  public void introduceMyself(){
+    printMessage("名前は"+ getName() +"です"+ getAge() +"歳です");
   }
 }
