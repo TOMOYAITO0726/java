@@ -3,3 +3,4 @@ public class HelloWorld2{
     System.out.println("こんにちは。\"斉藤さん。\"");
   }
 }
+
