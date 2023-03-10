@@ -1,7 +1,7 @@
 public class Cat{
-  String name;  //nameフィールドを追加
-  int age;      //ageフィールドを追加
-  boolean hungry;  //hungryフィールドを追加
+  private String name;  //nameフィールドを追加
+  private int age;      //ageフィールドを追加
+  private boolean hungry;  //hungryフィールドを追加
   
   private void printMessage(String message){
     System.out.println(name + ">" + message);
