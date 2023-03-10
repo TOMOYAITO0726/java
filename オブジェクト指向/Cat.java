@@ -1,3 +1,5 @@
+
+
 public class Cat{
   private String name;  //nameフィールドを追加
   private int age;      //ageフィールドを追加
@@ -13,16 +15,26 @@ public class Cat{
     hungry =false;
   }
   
+  public void eat(String food) {
+    printMessage(food+"を食べるよ！おいしいにゃー");
+    printMessage("お腹が一杯になったにゃー");
+    hungry = false;
+  }
   public boolean isHungry() {
     return true;
   }
   
   public void playToy(String toy){
-    printMessage( toy + "で遊ぶよ。楽しいにゃー");
+    printMessage( "おもちゃで遊ぶよ。楽しいにゃー");
     printMessage("遊んでお腹が減ったにゃー");
     hungry = true;
   }
   
+  public void playToy(){
+    printMessage("おもちゃで遊ぶよ。楽しいにゃー");
+    printMessage("遊んでお腹が減ったにゃー");
+    hungry = true;
+  }
   public void setName(String catName){ //nameフィールドのセッターを追加
     name = catName;
   }
