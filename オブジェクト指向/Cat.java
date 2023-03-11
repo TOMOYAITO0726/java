@@ -5,6 +5,22 @@ public class Cat{
   private int age;      //ageフィールドを追加
   private boolean hungry;  //hungryフィールドを追加
   
+  public Cat() {
+    System.out.println("コンストラクター:Cat()が呼び出された");
+    this.name = "まだない";
+    this.age = 0;
+  }
+  
+  public Cat(String name, int age) {
+    System.out.println("コンストラクター:Cat(String name, int age)が呼び出された");
+    this.name = name;
+    this.age = age;
+  }
+  
+  public Cat(String name) {
+    this(name,0);
+    System.out.println("コンストラクター:Cat(String name)が呼び出された");
+  }
   private void printMessage(String message){
     System.out.println(name + ">" + message);
   }
