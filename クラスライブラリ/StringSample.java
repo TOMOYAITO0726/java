@@ -8,5 +8,11 @@ public class StringSample {
     String str2 ="あいう";
     System.out.println("str2 = " + str2);
     System.out.println("str2.length() → " + str2.length());
+    System.out.println("---------------");
+    String str3 = "ABCdef";
+    System.out.println("str3 = " + str3);
+    
+    String str3ToLower = str3.toLowerCase();
+    System.out.println("str3.toLowerCase() → " + str3ToLower);
   }
 }
