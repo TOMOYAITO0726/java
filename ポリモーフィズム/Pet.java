@@ -1,5 +1,5 @@
-public interface Pet {
-  public void eat();
+public interface Pet { //①インターフェースを定義
+  public void eat(); //②抽象メソッドを定義
   
   public void eat(String food);
   
