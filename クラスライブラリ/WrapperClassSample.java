@@ -12,5 +12,10 @@ public class WrapperClassSample {
     String str3 = "+123";
     System.out.println("str3 = " + str3);
     System.out.println("Integer.parseInt(str3) → " + Integer.parseInt(str3));
+    System.out.println("----------");
+    String str6 ="10.5";
+    double d1 = Double.parseDouble(str6);
+    System.out.println("str6 = " + str6);
+    System.out.println("Double.parseDouble(str6) → " + d1);
   }
 }
