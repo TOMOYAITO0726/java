@@ -1,27 +1,29 @@
- 
-
-public class Cat implements Pet {
-  @Override
+public class Cat extends Animal {
+  public Cat(String name, int age) {
+    setName(name);
+    setAge(age);
+    System.out.println("コンストラクター:Cat(String name, int age)が呼び出された");
+    System.out.println("  引数:name=" + name +", age=" + age);
+  }
+  
   public void eat() {
     eat("ご飯");
   }
   
-  @Override
   public void eat(String food) {
-    System.out.println(food + "を食べるよ！おいしいにゃー");
-    System.out.println("お腹が一杯になったにゃー");
+    printMessage(food + "を食べるよ！おいしいにゃー");
+    printMessage("お腹が一杯になったにゃー");
+    setHungry(false);
   }
   
-  @Override
+  public void playToy(String toy) {
+    printMessage(toy + "で遊ぶよ。楽しいにゃー");
+    printMessage("遊んでお腹が減ったにゃー");
+    setHungry(true);
+  }
+  
   public void playToy() {
     playToy("おもちゃ");
   }
   
-  @Override
-  public void playToy(String toy) {
-    System.out.println(toy + "で遊ぶよ。楽しいにゃー");
-    System.out.println("遊んでお腹が減ったにゃー");
-  }
-  
-  
-}
+} 
