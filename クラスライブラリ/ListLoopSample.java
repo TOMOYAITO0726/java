@@ -3,16 +3,14 @@ import java.util.List;
 
 public class ListLoopSample {
   public static void main(String[] args) {
-    List<Integer> numberList = new ArrayList<>();
+    List<String> animalsList = new ArrayList<>();
 
-    numberList.add(100);
-    numberList.add(65);
-    numberList.add(80);
+    animalsList.add("犬");
+    animalsList.add("猫");
+    animalsList.add("猿");
     
-    System.out.println();
-    System.out.println("--- 拡張for文を使って、リストから要素を取り出す---");
-    for (int number : numberList) {
-      System.out.println(number);
+    for (String animals : animalsList) { //リストから要素を取り出す
+      System.out.println(animals);
     }
   }
 }

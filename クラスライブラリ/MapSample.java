@@ -3,14 +3,15 @@ import java.util.Map;
 
 public class MapSample {
   public static void main(String[] args) {
-    Map<String, Integer> fruitsMap = new HashMap<>();
+    Map<String, Integer> animalsMap = new HashMap<>();
   
-    fruitsMap.put("りんご", 100);
-    fruitsMap.put("みかん", 150);
-    fruitsMap.put("ばなな", 250);
+    animalsMap.put("犬", 1);
+    animalsMap.put("猫", 2);
+    animalsMap.put("猿", 3);
     
-    System.out.println("りんご:" + fruitsMap.get("りんご"));
-    System.out.println("みかん:" + fruitsMap.get("みかん"));
-    System.out.println("ばなな:" + fruitsMap.get("ばなな"));
+    
+    System.out.println("犬:" + animalsMap.get("犬"));
+    System.out.println("猫:" + animalsMap.get("猫"));
+    System.out.println("猿:" + animalsMap.get("猿"));
   }
 }
