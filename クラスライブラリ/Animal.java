@@ -32,6 +32,6 @@ public class Animal {
   }
   
   public void introduceMyself() {
-    printMessage("名前" + getName() + "です、" + getAge() + "歳です。");
+    printMessage("名前は" + getName() + "です、" + getAge() + "歳です。");
   }
 }
