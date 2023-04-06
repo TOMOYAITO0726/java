@@ -29,4 +29,14 @@ public class Dog extends Animal implements Pet {
     playToy("おもちゃ");
   }
   
+  @Override
+  public void introduceMyself() {
+    printMessage("名前は" + getName() + "です、" + getAge() + "歳です。");
+    boolean h = isHungry();
+    if (h == true) {
+      printMessage("お腹がすいているワン");
+    } else {
+      printMessage("お腹はすいていないワン");
+    }
+  }
 } 

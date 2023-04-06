@@ -30,4 +30,14 @@ public class Cat extends Animal implements Pet {
     playToy("おもちゃ");
   }
   
+  @Override
+  public void introduceMyself() {
+    printMessage("名前" + getName() + "です、" + getAge() + "歳です。");
+    boolean h = isHungry();
+    if(h == true) {
+       printMessage("お腹がすいているにゃー！");
+    } else {
+       printMessage("お腹はすいていないにゃー！");
+    }
+  }
 } 
