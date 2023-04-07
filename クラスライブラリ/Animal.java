@@ -2,6 +2,13 @@ public class Animal {
   private String name;
   private int age;
   private boolean hungry;
+  public Animal(String name, int age) {
+    this.name = name;
+    this.age = age;
+    
+    System.out.println("コンストラクター:Animal(String name, int ageが呼び出された");
+    System.out.println("  引数:name=" + name + ", age=" + age);
+  }
   
   public void setName(String name) {
     this.name = name;
@@ -27,7 +34,7 @@ public class Animal {
     return hungry;
   }
   
-  public void printMessage(String message) {
+  protected void printMessage(String message) {
     System.out.println(name + ">" + message);
   }
   

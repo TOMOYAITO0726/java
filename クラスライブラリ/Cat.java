@@ -1,7 +1,8 @@
-public class Cat extends Animal implements Pet {
+public final class Cat extends Animal implements Pet {
   public Cat(String name, int age) {
-    setName(name);
-    setAge(age);
+    //setName(name);
+    //setAge(age);
+    super(name, age);
     System.out.println("コンストラクター:Cat(String name, int age)が呼び出された");
     System.out.println("  引数:name=" + name +", age=" + age);
   }
@@ -32,7 +33,10 @@ public class Cat extends Animal implements Pet {
   
   @Override
   public void introduceMyself() {
-    printMessage("名前" + getName() + "です、" + getAge() + "歳です。");
+    
+    super.introduceMyself(); //AnimalクラスのintroduceMyselfメソッドを呼び出す
+                             //super.を使うことでCatクラスのインスタンスを生成する
+                              
     boolean h = isHungry();
     if(h == true) {
        printMessage("お腹がすいているにゃー！");

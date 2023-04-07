@@ -1,7 +1,8 @@
 public class Dog extends Animal implements Pet {
   public Dog(String name, int age) {
-    setName(name);
-    setAge(age);
+    //setName(name);
+    //setAge(age);
+    super(name, age);
     System.out.println("コンストラクター:Cat(String name, int age)が呼び出された");
     System.out.println("  引数:name=" + name +", age=" + age);
   }
@@ -31,7 +32,9 @@ public class Dog extends Animal implements Pet {
   
   @Override
   public void introduceMyself() {
-    printMessage("名前は" + getName() + "です、" + getAge() + "歳です。");
+    
+    super.introduceMyself();
+    
     boolean h = isHungry();
     if (h == true) {
       printMessage("お腹がすいているワン");
